@@ -276,6 +276,22 @@ body {
     color: white;
 }
 
+.skills__columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills__column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.skills__text {
+    color: var(--secondary-text-color);
+    margin-bottom: 5px;
+}
+
+
 /* Agregar estas reglas específicas para el modo oscuro */
 .dark-mode .contact-info__header,
 .dark-mode .contact-info__sub-header,
