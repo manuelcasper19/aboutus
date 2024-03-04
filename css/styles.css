@@ -72,6 +72,7 @@ body {
 .contact-info__header,
 .contact-info__sub-header {
     text-align: center;
+    
 }
 
 .contact-info__header {
@@ -130,6 +131,7 @@ body {
     object-fit: cover;
     border: 3px solid;
     border-color: var(--text-decoration-color);
+    cursor: pointer;
 }
 
 .intro {
@@ -264,6 +266,16 @@ body {
 }
 
 
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
 .skills__columns {
     display: flex;
     justify-content: space-between;
@@ -277,4 +289,41 @@ body {
 .skills__text {
     color: var(--secondary-text-color);
     margin-bottom: 5px;
+}
+
+
+/* Agregar estas reglas específicas para el modo oscuro */
+.dark-mode .contact-info__header,
+.dark-mode .contact-info__sub-header,
+.dark-mode .intro_text,
+.dark-mode .skills__header,
+.dark-mode .skills__text,
+.dark-mode .experiences__header,
+.dark-mode .experiences__company-header-durability,
+.dark-mode .experiences__company-header-name,
+.dark-mode .experiences__company-project-name,
+.dark-mode .additional-info__education-header,
+.dark-mode .additional-info__education-university-durability,
+.dark-mode .additional-info__education-university-speciality,
+.dark-mode .additional-info__languages-header,
+.dark-mode .additional-info__languages-item {
+    color: white; /* Cambiar el color del texto a blanco en modo oscuro */
+}
+
+.dark-mode .intro__icon path {
+    fill: white; /* Cambiar el color del icono a blanco en modo oscuro */
+}
+.dark-mode .contact-info__item-icon path {
+    fill: white; /* Cambiar el color de los iconos a blanco en modo oscuro */
+}
+.dark-mode .contact-info__item,
+.dark-mode .contact-info__item span { /* Incluir el texto dentro del mismo selector */
+    color: white; /* Cambiar el color del texto a blanco en modo oscuro */
+}
+.dark-mode .experiences__company-project-responsibilities li {
+    color: white;
+}
+
+.dark-mode .additional-info__education-university-name {
+    color: white;
 }
